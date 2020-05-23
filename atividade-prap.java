@@ -11,7 +11,7 @@ public class HardSkill {
     @PrimaryKey(autoGenerate = true)
     @NonNull
     @ColumnInfo(name = "HardskillId")
-    private int hId;
+    private int mId;
 
     @Nullable
     @ColumnInfo(name = "HardSkillName")
@@ -19,12 +19,12 @@ public class HardSkill {
 
     private String hProvelt;
     private double hValue;
-    private String mCreationDate;
+    private String hCreationDate;
 
     public HardSkill(@Nullable String name, String provelt, double value, String creationDate) {
         hName = name;
-        hprovelt = provelt;
-        hValue = Value;
+        hProvelt = provelt;
+        hValue = value;
         hCreationDate = creationDate;
     }
     public int getId() {
@@ -40,21 +40,21 @@ public class HardSkill {
         hName = name;
     }
     public String getprovelt() {
-        return mStyle;
+        return hProvelt;
     }
     public void setprovelt(String provelt) {
-        hprovelt = provelt;
+        hProvelt = provelt;
     }
     public double getValue() {
         return hValue;
     }
     public void setScore(double value) {
-        hValue  = Value;
+        hValue  = value;
     }
     public String getCreationDate() {
-        return mCreationDate;
+        return hCreationDate;
     }
     public void setCreationDate(String creationDate) {
-        mCreationDate = creationDate;
+        hCreationDate = creationDate;
     }
 }
